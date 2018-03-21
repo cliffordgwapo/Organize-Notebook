@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title> MY APP </title>
+          <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<script type = "text/javascript" src = "salindogwapobootsratp/js/jquery-slim.min.js"></script>
+		  <script type = "text/javascript" src = "salindogwapobootsratp/js/popper.min.js"></script>
+		  <script type = "text/javascript" src = "salindogwapobootsratp/js/bootstrap.js"></script>
+	 </head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+   <a class="navbar-brand" href="#">
+    <img src="wew.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Organize-Notebook
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+	<div class="container">
+			<nav aria-label="breadcrumb" role="navigation"><br>
+  				<ol class="breadcrumb">
+    					<li class="breadcrumb-item"><a href="Menu.html">Home</a></li>
+    					<li class="breadcrumb-item active" aria-current="page">Create Notes</li>
+						<li class="breadcrumb-item"><a href="read.html">Read Notes</a></li>
+						<li class="breadcrumb-item"><a href="edit.html">Update/Delete Notes</a></li>
+						<li class="breadcrumb-item"><a href="delete.html">Add Notes</a></li>
+    					<li class="breadcrumb-item"><a href="search.html">Search Notes</a></li>
+  				</ol>
+			</nav>
+		<form class="container" id="needs-validation" novalidate>
+  			<div class="form-group">
+    				<label for="exampleFormControlSelect1">Select Subject</label>
+    				<select class="form-control" id="exampleFormControlSelect1">
+      					<option>1</option>
+      					<option>2</option>
+      					<option>3</option>
+      					<option>4</option>
+      					<option>5</option>
+    				</select>
+  			</div>
+			<div class="form-group">
+  				<label for="validationCustom01">Note Title:</label><br>
+				<input type="text" class="form-control" id="validationCustom01" placeholder="Note title" required name="firstname">
+					<div class="invalid-feedback">
+        				Please provide a valid title.
+      					</div><br>
+ 				<label for="validationCustom02">Note Date:</label><br>
+				<input type="date" class="form-control" id="validationCustom02" required name="note">
+					<div class="invalid-feedback">
+       					 Please provide a valid date.
+     					 </div><br>
+				<label for="validationCustom03">Select a time:</label>
+				<input type="time" class="form-control" id="validationCustom03" required name="usr_time">
+					<div class="invalid-feedback">
+       					 Please provide a valid time.
+     					 </div><br>
+			</div>
+  			<div class="form-group">
+    				<label for="validationCustom04">Input your notes</label>
+    				<textarea class="form-control" id="validationCustom04" rows="5" required></textarea>
+				<div class="invalid-feedback">
+       				 Please provide a valid note.
+     				 </div>
+  			</div>
+			<input class="btn btn-primary" type="submit" value="Submit">
+		</form>
+	<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+
+  window.addEventListener('load', function() {
+    var form = document.getElementById('needs-validation');
+    form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  }, false);
+})();
+</script>
+	</div>
+	
+</body>
+</html>

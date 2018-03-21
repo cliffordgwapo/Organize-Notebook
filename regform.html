@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title> MY APP </title>
+          <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	 </head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-primary justify-content-between">
+		<img src="booktalk.png" class="rounded" width="100" height="50" alt="responsive image">
+		<img src="images.jpg" class="rounded" width="100" height="50">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</nav>
+	<div class="jumbotron">
+			<h1 class="display-3">Registration form</h1>
+				<p class="lead">Please fill up all your information in the registration form.</p>
+				<hr class="my-5">
+		<form class="container" id="needs-validation" novalidate>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom01">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom02">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">City</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">Province</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="Province" required>
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom05">Zip</label>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+  <a class="btn btn-primary" href="Menu.html" role="button">Done</a>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+
+  window.addEventListener('load', function() {
+    var form = document.getElementById('needs-validation');
+    form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  }, false);
+})();
+</script>
+</div>
+</body>
+</html>
